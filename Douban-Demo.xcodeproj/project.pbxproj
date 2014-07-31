@@ -14,10 +14,26 @@
 		06BD8727198878ED0025A46D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8726198878ED0025A46D /* MainViewController.swift */; };
 		06BD8729198879090025A46D /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD8728198879090025A46D /* ChannelListViewController.swift */; };
 		06BD872D1988875C0025A46D /* DoubanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD872C1988875C0025A46D /* DoubanService.swift */; };
+		06D9649E198A1C3400E111A1 /* TestThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D9649D198A1C3400E111A1 /* TestThread.swift */; };
+		06D964A3198A248100E111A1 /* DoubanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BD872C1988875C0025A46D /* DoubanService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		06BD8717198878610025A46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BD86FC198878610025A46D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BD8703198878610025A46D;
+			remoteInfo = "Douban-Demo";
+		};
+		06D9649F198A228200E111A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BD86FC198878610025A46D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BD8703198878610025A46D;
+			remoteInfo = "Douban-Demo";
+		};
+		06D964A1198A228200E111A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 06BD86FC198878610025A46D /* Project object */;
 			proxyType = 1;
@@ -38,6 +54,7 @@
 		06BD8726198878ED0025A46D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		06BD8728198879090025A46D /* ChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
 		06BD872C1988875C0025A46D /* DoubanService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanService.swift; sourceTree = "<group>"; };
+		06D9649D198A1C3400E111A1 /* TestThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestThread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +120,7 @@
 			children = (
 				06BD871C198878610025A46D /* Douban_DemoTests.swift */,
 				06BD871A198878610025A46D /* Supporting Files */,
+				06D9649D198A1C3400E111A1 /* TestThread.swift */,
 			);
 			path = "Douban-DemoTests";
 			sourceTree = "<group>";
@@ -147,6 +165,8 @@
 			);
 			dependencies = (
 				06BD8718198878610025A46D /* PBXTargetDependency */,
+				06D964A0198A228200E111A1 /* PBXTargetDependency */,
+				06D964A2198A228200E111A1 /* PBXTargetDependency */,
 			);
 			name = "Douban-DemoTests";
 			productName = "Douban-DemoTests";
@@ -226,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BD871D198878610025A46D /* Douban_DemoTests.swift in Sources */,
+				06D964A3198A248100E111A1 /* DoubanService.swift in Sources */,
+				06D9649E198A1C3400E111A1 /* TestThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +258,16 @@
 			isa = PBXTargetDependency;
 			target = 06BD8703198878610025A46D /* Douban-Demo */;
 			targetProxy = 06BD8717198878610025A46D /* PBXContainerItemProxy */;
+		};
+		06D964A0198A228200E111A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BD8703198878610025A46D /* Douban-Demo */;
+			targetProxy = 06D9649F198A228200E111A1 /* PBXContainerItemProxy */;
+		};
+		06D964A2198A228200E111A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BD8703198878610025A46D /* Douban-Demo */;
+			targetProxy = 06D964A1198A228200E111A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,6 +435,7 @@
 				06BD8722198878610025A46D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06BD8723198878610025A46D /* Build configuration list for PBXNativeTarget "Douban-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +444,7 @@
 				06BD8725198878610025A46D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
